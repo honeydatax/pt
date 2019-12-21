@@ -1,0 +1,4 @@
+sudo apt-get install mono
+sudo apt-get install mono-dev
+sudo apt-get install geany
+sudo apt-get install codeblocks
