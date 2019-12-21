@@ -11,6 +11,14 @@ namespace pt{
 		public static string entrada(){
 			return Console.ReadLine();
 		}
+		public static double entradan(){
+			return double.Parse(Console.ReadLine());
+		}
+		public static string texton(double numero){
+			return numero.ToString();
+		}
+
+		
 	}
 	
 }
