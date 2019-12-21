@@ -17,8 +17,27 @@ namespace pt{
 		public static string texton(double numero){
 			return numero.ToString();
 		}
+		public static void apagar(){
+			string s="";
+			int i =0;
+			for(i=0;i<80;i++){
+				s=s+" ";
+			}
+			for(i=0;i<25;i++){
+				Console.WriteLine(s);
+			}
+
+			
+		}
 
 		
 	}
 	
 }
+
+
+
+
+
+
+
