@@ -8,6 +8,9 @@ namespace pt{
 		public static void escrever(String s){
 				Console.WriteLine(s);
 		}
+		public static string entrada(){
+			return Console.ReadLine();
+		}
 	}
 	
 }
