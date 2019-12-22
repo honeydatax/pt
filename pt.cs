@@ -29,8 +29,15 @@ namespace pt{
 
 			
 		}
-
-		
+		public static void localiza(int x,int y){
+			string s;
+			string sx;
+			string sy;
+			sx=x.ToString() + ";" ;
+			sy=y.ToString() + "f" ;
+			s="\x1b[" + sx + sy ;
+			Console.Write(s);
+		}
 	}
 	
 }
