@@ -1,5 +1,5 @@
 using System;
-
+using System.IO;
 
 namespace pt{
 	public class pts{
@@ -34,7 +34,7 @@ namespace pt{
 			for(i=0;i<80;i++){
 				s=s+" ";
 			}
-			for(i=0;i<25;i++){
+			for(i=0;i<60;i++){
 				Console.WriteLine(s);
 			}
 
@@ -70,6 +70,14 @@ namespace pt{
 			s="\x1b[" + sx + sy ;
 			Console.Write(s);
 
+		}
+		public static string ler(string files){
+			String line2="";
+			String[] lines=File.ReadAllLines(files);
+			foreach(string line1 in lines){
+				line2=line2+"\n"+line1;
+			}
+			return line2.ToString();
 		}
 
 	}
