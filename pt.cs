@@ -79,6 +79,12 @@ namespace pt{
 			}
 			return line2.ToString();
 		}
+		public static void gravar(string files,string textos){
+			using(StreamWriter file =new StreamWriter(files)){
+				file.Write(textos);
+			}
+		}
+
 
 	}
 	
