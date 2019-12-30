@@ -44,9 +44,9 @@ namespace pt{
 			string s;
 			string sx;
 			string sy;
-			sx=x.ToString() + ";" ;
-			sy=y.ToString() + "f" ;
-			s="\x1b[" + sx + sy ;
+			sx=x.ToString() + "f" ;
+			sy=y.ToString() + ";" ;
+			s="\x1b[" + sy + sx ;
 			Console.Write(s);
 		}
 		public static void papel(int valor){
@@ -83,6 +83,31 @@ namespace pt{
 			using(StreamWriter file =new StreamWriter(files)){
 				file.Write(textos);
 			}
+		}
+		public static string encher(string textos,int vezes){
+			int n;
+			string s="";
+			for (n=0;n<vezes;n++){
+				s=s+textos;
+			}
+			return s;
+		}
+		public static string espaco(int vezes){
+			int n;
+			string s="";
+			for (n=0;n<vezes;n++){
+				s=s+" ";
+			}
+			return s;
+		}
+
+		public static string centrar(string textos,int vezes){
+	
+			string s="";
+			int nn=(vezes-textos.Length)/2;
+			s=espaco(nn);
+			s=s+textos;
+			return s;
 		}
 
 
