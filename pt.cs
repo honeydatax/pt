@@ -110,6 +110,13 @@ namespace pt{
 			return s;
 		}
 
+		public static int em(string textos,string contendo){
+	
+			int i;
+			i=textos.IndexOf(contendo);
+			return i;
+		}
+
 
 	}
 	
