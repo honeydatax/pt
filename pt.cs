@@ -14,6 +14,7 @@ namespace pt{
 		public static int cyan = 6;
 		public static int cinza = 7;
 		public static int branco = 7;
+		public static Random rnd = new Random();
 		
 		public static double Pi = 3.1415927;
 		public static void escrever(String s){
@@ -117,6 +118,12 @@ namespace pt{
 			return i;
 		}
 
+		public static int loto(int inicial,int fim){
+	
+			int i;
+			i=rnd.Next(inicial,fim);
+			return i;
+		}
 
 	}
 	
